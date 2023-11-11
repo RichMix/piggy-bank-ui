@@ -1,42 +1,62 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 5rem;
   text-align: center;
+  background-image: url('./assets/media/pig-bg/PG.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header, .footer {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  width: 150px;
+  height: auto;
+  transition: filter 0.3s ease-in-out;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
 
 .card {
-  padding: 2em;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px; /* You can adjust this value based on your design needs */
+  margin: 20px 0;
 }
 
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #646cffaa;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #515cb7; /* Darker shade for hover effect */
+}
+
+
+
+/*
 .read-the-docs {
   color: #888;
 }
+*/

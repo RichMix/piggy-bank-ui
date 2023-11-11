@@ -1,11 +1,20 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import reactLogo from './assets/media/PiggyGif.gif'
 import viteLogo from '/vite.svg'
+import backgroundImage from './assets/media/pig-bg/pg.png'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
   console.log(count)
+
+  const [minting, setMinting] = useState(false);
+
+  const handleMint =async () => {
+    setMinting(true);
+    console.log('Minting the Piggy Bank NFT');
+    setMinting(false);
+  }
 
   return (
     <>
@@ -23,11 +32,11 @@ function App() {
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Mint site currently in development. Please be patient.
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+        Please connect your wallet to mint a pig.
       </p>
     </>
   )
